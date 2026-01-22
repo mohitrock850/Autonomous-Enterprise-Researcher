@@ -14,12 +14,12 @@
 
 | **Multi-Modal Analysis (Vision RAG)** | **Real-Time Web Search** |
 |:-------------------------------------:|:----------------------------------:|
-| ![PDF Analysis](screenshots/pdf_result_Sharp.gif) | ![Web Search](assets/live_api_result.png) |
+| ![PDF Analysis](screenshots/pdf_result_Sharp.gif) | ![Web Search](screenshots/live_api_result.png) |
 | *Extracts and analyzes charts from PDFs* | *Fetches live financial/market data* |
 
 | **Local LLM Support (Privacy)** | **Website Scraping** |
 |:-------------------------------------:|:----------------------------------:|
-| ![Local Phi-3](assets/local_llm.png) | ![Scraping](assets/website_result_Sharp.gif) |
+| ![Local Phi-3](screenshots/local_llm.png) | ![Scraping](screenshots/website_result_Sharp.gif) |
 | *Runs offline on local hardware via Ollama* | *Reads and summarizes specific URLs* |
 
 ---
@@ -233,3 +233,4 @@ See `LICENSE` for more information.
 ---
 
 ### ❤️ Built with love by **Mohit**
+
