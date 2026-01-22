@@ -1,22 +1,9 @@
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import os
-import threading
-import signal
-
 os.environ["CREWAI_TELEMETRY_OPT_OUT"] = "true"
-_original_signal = signal.signal
-
-def threaded_signal_handler(sig, action):
-    try:
-        if threading.current_thread() is threading.main_thread():
-            return _original_signal(sig, action)
-    except ValueError:
-        # Ignore the error if we are not in the main thread
-        pass
-
-signal.signal = threaded_signal_handler
 
 import streamlit as st
 import os
