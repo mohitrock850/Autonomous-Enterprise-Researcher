@@ -238,6 +238,20 @@ streamlit run app.py
 ### Export
 - 📥 **Download Report** → Clean PDF summary
 
+```markdown
+### 🧪 Testing with Sample Data
+We have provided sample data to help you test the agent's capabilities immediately.
+
+1.  **Locate the Sample PDF:**
+    * Go to the main  and find `Global Electric Vehicle.pdf`.
+    * Upload this file in the **Sidebar** of the app.
+2.  **Run the Test Query:**
+    * Ask the agent: *"Analyze the growth trend of EVs based on the chart in the document."*
+    * The agent will use the **Vision Tool** to read the chart and generate a report.
+3.  **View Sample Code:**
+    * Check `report.py` to see an example of how the reporting logic is structured programmatically.
+```
+
 ## 📂 Project Structure
 
 ```text
@@ -247,6 +261,8 @@ autonomous-enterprise-researcher/
 ├── app.py                  # Streamlit entry point
 ├── analysis_tools.py       # Custom tools (Vision, PDF, Code)
 ├── tools.py                # CrewAI tool configuration
+├── Global Electric Vehicle.pdf #Sample PDF Uploaded 
+├── report.py              # Sample Report Generated
 ├── chat_history.json       # Local chat persistence
 ├── requirements.txt        # Dependencies
 └── README.md               # Documentation
@@ -267,5 +283,6 @@ See `LICENSE` for more information.
 ---
 
 ### ❤️ Built with love by **Mohit**
+
 
 
