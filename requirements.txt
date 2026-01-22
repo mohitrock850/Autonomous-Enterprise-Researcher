@@ -19,3 +19,4 @@ pymupdf
 requests
 crewai-tools
 fpdf
+pysqlite3-binary
