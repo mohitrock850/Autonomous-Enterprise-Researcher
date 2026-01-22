@@ -201,7 +201,7 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-##⚠️ Ensure litellm and crewai-tools are included
+> **⚠️ Note:** Ensure `litellm` and `crewai-tools` are installed, as they are critical for the hybrid LLM switching.
 
 ## 🤖 Local LLM Setup (Ollama)
 
@@ -243,8 +243,8 @@ streamlit run app.py
 We have provided sample data to help you test the agent's capabilities immediately.
 
 1.  **Locate the Sample PDF:**
-    * Go to the main  and find `Global Electric Vehicle.pdf`.
-    * Upload this file in the **Sidebar** of the app.
+    * Find the file `Global Electric Vehicle.pdf` in the **root directory** of this project.
+    * Upload this file using the **Sidebar** in the app.
 2.  **Run the Test Query:**
     * Ask the agent: *"Analyze the growth trend of EVs based on the chart in the document."*
     * The agent will use the **Vision Tool** to read the chart and generate a report.
@@ -285,6 +285,7 @@ See `LICENSE` for more information.
 ---
 
 ### ❤️ Built with love by **Mohit**
+
 
 
 
