@@ -1,28 +1,62 @@
 # 🤖 Autonomous Enterprise Research Agent
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red)
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red?logo=streamlit&logoColor=white)
 ![CrewAI](https://img.shields.io/badge/Orchestration-CrewAI-orange)
-![Ollama](https://img.shields.io/badge/Local_LLM-Ollama-black)
+![LangChain](https://img.shields.io/badge/Framework-LangChain-1C3C3C?logo=langchain&logoColor=white)
+
+![OpenAI](https://img.shields.io/badge/Cloud_LLM-GPT--4o-412991?logo=openai&logoColor=white)
+![Ollama](https://img.shields.io/badge/Local_LLM-Ollama-black?logo=ollama&logoColor=white)
+![Microsoft Phi-3](https://img.shields.io/badge/Model-Phi--3-00A4EF?logo=microsoft&logoColor=white)
+
+![PyMuPDF](https://img.shields.io/badge/PDF-PyMuPDF-firebrick)
+![Google Serper](https://img.shields.io/badge/Web_Search-Serper_Dev-4285F4?logo=google&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+</div>
 
 > **A production-grade, multi-modal autonomous agent capable of synthesizing proprietary internal data (PDFs) with real-time web intelligence to generate professional business reports.**
 
----
-
 ## 📸 Project Showcase
 
-| **Multi-Modal Analysis (Vision RAG)** | **Real-Time Web Search** |
-|:-------------------------------------:|:----------------------------------:|
-| ![PDF Analysis](screenshots/pdf_result_Sharp.gif) | ![Web Search](screenshots/live_api_result.png) |
-| *Extracts and analyzes charts from PDFs* | *Fetches live financial/market data* |
+<table width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <h3>Multi-Modal Analysis (Vision RAG)</h3>
+      <img src="screenshots/pdf_result_Sharp.gif" width="98%" />
+      <br/>
+      <em>Extracts and analyzes charts from PDFs</em>
+    </td>
+    <td align="center" width="50%">
+      <h3>Real-Time Web Search</h3>
+      <img src="screenshots/live_api_result.png" width="98%" />
+      <br/>
+      <em>Fetches live financial / market data</em>
+    </td>
+  </tr>
+</table>
 
-| **Local LLM Support (Privacy)** | **Website Scraping** |
-|:-------------------------------------:|:----------------------------------:|
-| ![Local Phi-3](screenshots/local_llm.png) | ![Scraping](screenshots/website_result_Sharp.gif) |
-| *Runs offline on local hardware via Ollama* | *Reads and summarizes specific URLs* |
+<br/>
 
----
+<table width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <h3>Local LLM Support (Privacy)</h3>
+      <img src="screenshots/local_llm.png" width="98%" />
+      <br/>
+      <em>Runs offline on local hardware via Ollama</em>
+    </td>
+    <td align="center" width="50%">
+      <h3>Website Scraping</h3>
+      <img src="screenshots/website_result_Sharp.gif" width="98%" />
+      <br/>
+      <em>Reads and summarizes specific URLs</em>
+    </td>
+  </tr>
+</table>
+
 
 ## 🚀 Key Features
 
@@ -233,4 +267,5 @@ See `LICENSE` for more information.
 ---
 
 ### ❤️ Built with love by **Mohit**
+
 
