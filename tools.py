@@ -20,12 +20,26 @@ embeddings = OllamaEmbeddings(model="nomic-embed-text")
 # B. Load Vector Database (The "Memory")
 # This defines 'vector_db' so the functions below can use it.
 DB_PATH = "faiss_index"
-try:
-    vector_db = FAISS.load_local(DB_PATH, embeddings, allow_dangerous_deserialization=True)
-except RuntimeError:
-    print(f"❌ CRITICAL ERROR: Could not load '{DB_PATH}'.") 
-    print("   Did you run 'ingest.py' first to create the database?")
-    exit(1)
+vector_db = None
+
+def get_vector_db():
+    """
+    Safely loads the database only when needed.
+    """
+    global vector_db
+    if vector_db is not None:
+        return vector_db
+    
+    # Check if the folder exists before trying to load
+    if os.path.exists(DB_PATH):
+        try:
+            print("⚙️ Loading Vector Database...")
+            vector_db = FAISS.load_local(DB_PATH, embeddings, allow_dangerous_deserialization=True)
+            return vector_db
+        except Exception as e:
+            print(f"Error loading DB: {e}")
+            return None
+    return None
 
 # C. Load Validator LLM (The "Editor")
 llm = ChatOllama(model="phi3", format="json", temperature=0)
