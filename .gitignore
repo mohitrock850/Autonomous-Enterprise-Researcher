@@ -39,3 +39,5 @@ db/
 # --- OS Files ---
 .DS_Store
 Thumbs.db
+
+enterprise_app.db
