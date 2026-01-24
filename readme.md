@@ -1,3 +1,9 @@
+<div align="center">
+
+<a href="https://autonomous-enterprise-researcher.streamlit.app/">
+  <img src="https://img.shields.io/badge/🚀_Live_Demo-Try_Now-green?style=for-the-badge&logo=rocket" alt="Live Demo" />
+</a>
+
 # 🤖 Autonomous Enterprise Research Agent
 
 <div align="center">
@@ -305,3 +311,4 @@ See `LICENSE` for more information.
 ---
 
 ### ❤️ Built with love by **Mohit**
+
